@@ -1,0 +1,77 @@
+/*::: css reset code starts here :::*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D9E6ED;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*::: css reset code ends here :::*/
+
+
+/*::: header starts here :::*/
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+.header__wrapper {
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    background: url(images/logo.png) no-repeat;
+    float: left;
+    margin: 10px 10px 0 10px;
+    width: 260px;
+    height: 120px;
+}
+
+.header__links a {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header__links {
+    float: right;
+    margin-top: 39px;
+}
+
+.header__links a:hover,
+.header__links a.active {
+    background: url("images/arrow.png") center bottom no-repeat;
+}
+
+
+/*:::header ends here :::*/

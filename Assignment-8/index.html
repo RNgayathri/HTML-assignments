@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-8</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="header clearfix">
+        <h4 class="fleft header__title clearfix">Core Admin</h4>
+        <div class="fright header__list clearfix">
+            <ul class="fleft header__menu clearfix">
+                <li><img src="Images/home-img.jpg" class="header__menu__icon "><a class="header__menu__text active clearfix">Home</a></li>
+                <li><img src="Images/person-img.jpg" class="header__menu__icon"><a class="header__menu__text clearfix">Users</a></li>
+                <li><a class="header__menu__text">Dropdown</a><img src="Images/arrow-dwn2.png" class="clearfix" style="margin-left: 3px;"></li>
+            </ul>
+            <div class="fleft header__search__wrapper">
+                <input class=" header__search clearfix" placeholder="Search">
+            </div>
+            <div class="fleft header__username">
+                <img src="Images/user-img.jpg" style="margin-top: 3px;">
+                <a class="header__username__text">John Smith</a><img src="Images/arrow-dwn2.png" class="clearfix header__username__icon">
+            </div>
+        </div>
+        <div class="fright header__list__tablet clearfix">
+            <img src="Images/left-nav-icon.jpg" class="fleft header__lft-nav clearfix" />
+            <img src="Images/hdr-nav-icon.jpg" class="fleft header__nav" />
+        </div>
+    </div>
+
+    <div class="aside-layout__wrapper clearfix">
+        <div class="fleft aside">
+            <ul class="aside__menu">
+                <li><img src="Images/active.jpg"> <img src="Images/dashboard-img.jpg" class="aside__menu__icon" /><a class="aside__menu__text-active">Dashboard</a></li>
+                <li><img src="Images/inactive.jpg"> <img src="Images/lab-img.jpg" class="aside__menu__icon2" /><a class="aside__menu__text2">UI Lab<img src="Images/arrow-dwn2.png" class=" aside__menu__drop-icon"></a> </li>
+                <li><img src="Images/inactive.jpg"> <img src="Images/forms-img.jpg" class="aside__menu__icon2" /><a class="aside__menu__text2">Forms</a></li>
+                <li><img src="Images/inactive.jpg"> <img src="Images/charts-img.jpg" class="aside__menu__icon2" /><a class="aside__menu__text">Charts</a></li>
+                <li><img src="Images/inactive.jpg"> <img src="Images/others-img.jpg" class="aside__menu__icon2" /><a class="aside__menu__text">Others<img src="Images/arrow-dwn2.png" class=" aside__menu__drop-icon"></a></li>
+            </ul>
+            <img src="Images/cpu-usage.png" class="aside__image">
+            <span class="aside__image__text">CPU Usage</span>
+            <div class="aside__graph__wrapper">
+                <div class="aside__graph clearfix">
+                    <div class="fleft aside__graph__text">
+                        <lable class="aside__graph__title">Orders</lable>
+                        <div class="aside__graph__value clearfix">847</div>
+                    </div>
+                    <img src="Images/orders-img.png" class="aside__graph__image fright">
+                </div>
+                <div class="aside__graph graph2 clearfix">
+                    <div class="fleft aside__graph__text">
+                        <lable class="aside__graph__title">Income</lable>
+                        <div class="aside__graph__value  clearfix">$43.330</div>
+                    </div>
+                    <img src="Images/income-img.png" class="aside__graph__image fright">
+                </div>
+                <div class="aside__graph graph3 clearfix">
+                    <div class="fleft aside__graph__text">
+                        <lable class="aside__graph__title">Reviews</lable>
+                        <div class="aside__graph__value  clearfix">223</div>
+                    </div>
+                    <img src="Images/reviews-img.png" class="aside__graph__image fright clearfix">
+                </div>
+            </div>
+        </div>
+        <div class="fleft layout">
+            <div class="layout__header clearfix">
+                <div class="fleft layout__header__title__phone">
+                    <div class="layout__header__title">
+                        <img src="Images/dashbord2-img.jpg" class="layout__header__title__icon"><span class="layout__header__title__text">Dashboard</span>
+                    </div>
+                    <div class="layout__header__subtitle clearfix">
+                        A subtitle can be added here
+                    </div>
+                </div>
+                <div class="fright layout__header__graph__phone clearfix">
+                    <div class="fleft layout__header__graph clearfix">
+                        <div class="fleft layout__header__graph__text">
+                            <lable class="layout__header__graph__title">Orders</lable>
+                            <div class="layout__header__graph__value clearfix">847</div>
+                        </div>
+                        <img src="Images/orders-img2.png" class="layout__header__graph__image fright">
+                    </div>
+                    <div class="fleft layout__header__graph clearfix">
+                        <div class="fleft  layout__header__graph__text">
+                            <lable class="layout__header__graph__title">Reviews</lable>
+                            <div class="layout__header__graph__value value2 clearfix">223</div>
+                        </div>
+                        <img src="Images/reviews-img2.png" class="layout__header__graph__image fright">
+                    </div>
+                    <div class="fleft layout__header__graph clearfix">
+                        <div class="fleft  layout__header__graph__text">
+                            <lable class="layout__header__graph__title">New visits</lable>
+                            <div class="layout__header__graph__value value3 clearfix">7930</div>
+                        </div>
+                        <img src="Images/visits-img2.png" class="layout__header__graph__image fright clearfix">
+                    </div>
+                </div>
+
+            </div>
+            <div class="layout__dashboard">
+                <div class="layout__dashboard__header clearfix">
+                    <div class="fleft clearfix">
+                        <div class="fleft layout__dashboard__header__home-button">
+                            <img src="Images/home-img2.jpg" class="layout__dashboard__header__home-button__image"><span class="layout__dashboard__header__home-button__text ">Home</span>
+                        </div>
+                        <div class="fleft layout__dashboard__header__home-button__arrow"></div>
+                    </div>
+                    <div class="fleft">
+                        <img src="Images/dasboard3.jpg" class="layout__dashboard__header__image"><span class="layout__dashboard__header__text">Dashboard</span>
+                    </div>
+                </div>
+                <div class="layout__dashboard__section clearfix">
+                    <div class="layout__dashboard__section1 clearfix">
+                        <div class="fleft layout__dashboard__menu">
+
+                            <div class="fleft layout__dashboard__menu__item">
+                                <div class="layout__dashboard__menu__wrapper">
+                                    <img src="Images/new-project-img.jpg">
+                                    <lable class="layout__dashboard__menu__item__text">New Project</lable>
+                                </div>
+                                <span class="layout__dashboard__menu__item__icon">+</span>
+                            </div>
+                            <div class="fleft layout__dashboard__menu__item">
+                                <div class="layout__dashboard__menu__wrapper">
+                                    <img src="Images/msgs-img.jpg">
+                                    <lable class="layout__dashboard__menu__item__text">Messages</lable>
+                                </div>
+                                <span class="layout__dashboard__menu__item__icon2">14</span>
+                            </div>
+
+                            <div class="fleft layout__dashboard__menu__item">
+                                <div class="layout__dashboard__menu__wrapper">
+                                    <img src="Images/files-img.jpg">
+                                    <lable class="layout__dashboard__menu__item__text">Files</lable>
+                                </div>
+                            </div>
+                            <div class="fleft layout__dashboard__menu__item">
+                                <div class="layout__dashboard__menu__wrapper">
+                                    <img src="Images/users-img.jpg">
+                                    <lable class="layout__dashboard__menu__item__text">Users</lable>
+                                </div>
+                                <span class="layout__dashboard__menu__item__icon icon2">+3</span>
+                            </div>
+                            <div class="fleft layout__dashboard__menu__item">
+                                <div class="layout__dashboard__menu__wrapper">
+                                    <img src="Images/facebook-icon.jpg">
+                                    <lable class="layout__dashboard__menu__item__text">Friends</lable>
+                                </div>
+                            </div>
+                            <div class="fleft layout__dashboard__menu__item">
+                                <div class="layout__dashboard__menu__wrapper">
+                                    <img src="Images/twitter-icon.jpg">
+                                    <lable class="layout__dashboard__menu__item__text">Followers</lable>
+                                </div>
+                                <span class="layout__dashboard__menu__item__icon icon3 clearfix">+8</span>
+                            </div>
+                        </div>
+                        <div class="fright layout__dashboard__graph">
+                            <div class="layout__dashboard__graph__header clearfix">
+                                <span class="fleft layout__dashboard__graph__header__text clearfix">charts</span>
+                                <img src="Images/setting-img.jpg" class="fright layout__dashboard__graph__header__text text2 ">
+                            </div>
+                            <div class="layout__dashboard__graph__content clearfix">
+                                <div class="fleft layout__dashboard__graph__view">
+
+                                    <div class="graph">
+                                        <img src="Images/visits-img.jpg"><span class="graph__view__text">973,119</span>
+                                        <div class="graph__view__fill">
+                                            <div class="graph__view__fill-color"></div>
+                                        </div>
+                                        <lable class="graph__view__text2 clearfix">TOTAL VISITS</lable>
+                                    </div>
+                                    <div class="fleft graph1">
+                                        <img src="Images/new-visitors-img.jpg"><span class="graph__view__text3">8,800</span>
+                                        <div class="graph__view__fill fill2">
+                                            <div class="graph__view__fill-color fill-color2"></div>
+                                        </div>
+                                        <lable class="graph__view__text2 clearfix">NEW VISITORS</lable>
+                                    </div>
+                                    <div class="fleft graph1">
+                                        <img src="Images/views-img.jpg"><span class="graph__view__text3">25668</span>
+                                        <div class="graph__view__fill fill2">
+                                            <div class="graph__view__fill-color fill-color3"></div>
+                                        </div>
+                                        <lable class="graph__view__text2 clearfix">PAGE VIEWS</lable>
+                                    </div>
+
+                                </div>
+                                <img src="Images/chart.jpg" class="fright layout__dashboard__graph__image ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout__dashboard__section2 clearfix">
+                        <div class="fleft layout__dashboard__cal clearfix">
+                            <div class="layout__dashboard__cal__header clearfix">
+                                <h3 class="fleft layout__dashboard__cal__text">Full calender</h3>
+                                <ul class="fright layout__dashboard__cal__header__list">
+                                    <li class="active-list">month</li>
+                                    <li>week</li>
+                                    <li>day</li>
+                                </ul>
+                            </div>
+                            <div class="layout__dashboard__cal__month">
+                                <img src="Images/lft-arrow.jpg" class="fleft layout__dashboard__cal__month__arrow">
+                                <h3 class=" layout__dashboard__cal__text layout__dashboard__cal__text2">April 2013</h3><img src="Images/rght-arrow.jpg" class="fright layout__dashboard__cal__month__arrow">
+                            </div>
+                            <table class="layout__dashboard__cal__table clearfix">
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                                <tr>
+                                    <td><span>31</span></td>
+                                    <td><span>1</span>
+                                        <div class="layout__dashboard__cal__table__event">All Day
+                                            <br>Event
+                                        </div>
+                                    </td>
+                                    <td><span>2</span></td>
+                                    <td><span>3</span></td>
+                                    <td><span>4</span></td>
+                                    <td><span>5</span></td>
+                                    <td><span>6</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>7</span></td>
+                                    <td><span>8</span></td>
+                                    <td><span>9</span></td>
+                                    <td><span>10</span></td>
+                                    <td><span>11</span></td>
+                                    <td><span>12</span></td>
+                                    <td><span>13</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>14</span></td>
+                                    <td><span>15</span></td>
+                                    <td><span>16</span></td>
+                                    <td><span>17</span></td>
+                                    <td><span>18</span></td>
+                                    <td><span>19</span>
+                                        <div class="layout__dashboard__cal__table__event layout__dashboard__cal__table__event2">Long Event
+                                        </div>
+                                    </td>
+                                    <td><span>20</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>21</span>
+
+                                        <div class="layout__dashboard__cal__table__event layout__dashboard__cal__table__event2">Long Event
+                                        </div>
+                                        <div class="layout__dashboard__cal__table__event layout__dashboard__cal__table__event3">4p
+                                            <br>repeating
+                                            <br>Event
+                                        </div>
+                                    </td>
+                                    <td><span>22</span></td>
+                                    <td><span>23</span></td>
+                                    <td><span>24</span>
+                                        <div class="layout__dashboard__cal__table__event ">10:30a
+                                            <br>Meeting
+
+                                        </div>
+                                        <div class="layout__dashboard__cal__table__event layout__dashboard__cal__table__event3">12p Lunch
+
+                                        </div>
+                                    </td>
+                                    <td><span>25</span>
+                                        <div class="layout__dashboard__cal__table__event">7p
+                                            <br> Birthday
+                                            <br> Party
+
+                                        </div>
+                                    </td>
+                                    <td><span>26</span></td>
+                                    <td><span>27</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>28</span>
+                                        <div class="layout__dashboard__cal__table__event layout__dashboard__cal__table__event2">Click for Google
+                                        </div>
+                                        <div class="layout__dashboard__cal__table__event layout__dashboard__cal__table__event3">4p
+                                            <br>repeating
+                                            <br>Event
+                                        </div>
+                                    </td>
+                                    <td><span>29</span></td>
+                                    <td><span>30</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>2</span></td>
+                                    <td><span>3</span></td>
+                                    <td><span>4</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>5</span></td>
+                                    <td><span>6</span></td>
+                                    <td><span>7</span></td>
+                                    <td><span>8</span></td>
+                                    <td><span>9</span></td>
+                                    <td><span>10</span></td>
+                                    <td><span>11</span></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="fright layout__dashboard__updates">
+                            <div class="layout__dashboard__updates__header">
+                                <h3 class="layout__dashboard__updates__header__text clearfix">News with avatars(scrollable box)</h3>
+                                <span class="fright layout__dashboard__updates__header__value">178</span>
+                            </div>
+                            <ul class="layout__dashboard__updates__list">
+                                <li class="clearfix"><img src="Images/right-mark.jpg" class="fleft layout__dashboard__updates__list__image clearfix">
+                                    <div class="fleft layout__dashboard__updates__list__text">
+                                        <h4>Twittter Bootstrap v3.0 is coming!</h4>
+                                        <p>With 2.2.2 out the door, our attention has shifted almost entirely to the next major update to the project...</p>
+                                    </div>
+                                    <div class="fright">
+                                        <div class="layout__dashboard__updates__list__date">06</div>
+                                        <div class="layout__dashboard__updates__list__month">jan</div>
+                                    </div>
+                                </li>
+                                <li class="clearfix"><img src="Images/bulb-img.jpg" class="fleft layout__dashboard__updates__list__image clearfix">
+                                    <div class="fleft layout__dashboard__updates__list__text">
+                                        <h4>Ruby onRails 4.0</h4>
+                                        <p>Rails 4.0 is still unfinished , but it is shaping up to become a great release...</p>
+                                    </div>
+                                    <div class="fright">
+                                        <div class="layout__dashboard__updates__list__date">11</div>
+                                        <div class="layout__dashboard__updates__list__month">feb</div>
+                                    </div>
+                                </li>
+                                <li class="clearfix"><img src="Images/mobile-img.jpg" class="fleft layout__dashboard__updates__list__image clearfix">
+                                    <div class="fleft layout__dashboard__updates__list__text">
+                                        <h4>All about SCSS</h4>
+                                        <p>Sass makes CSS fun again.Sass is an extension of CSS3,ading nested rules...</p>
+                                    </div>
+                                    <div class="fright">
+                                        <div class="layout__dashboard__updates__list__date">04</div>
+                                        <div class="layout__dashboard__updates__list__month">mar</div>
+                                    </div>
+                                </li>
+                                <li class="clearfix"><img src="Images/right-mark2.jpg" class="fleft layout__dashboard__updates__list__image clearfix">
+                                    <div class="fleft layout__dashboard__updates__list__text">
+                                        <h4>Twittter Bootstrap v3.0 is coming!</h4>
+                                        <p>With 2.2.2 out the door, our attention has shifted almost entirely to the next major update to the project...</p>
+                                    </div>
+                                    <div class="fright">
+                                        <div class="layout__dashboard__updates__list__date">22</div>
+                                        <div class="layout__dashboard__updates__list__month">dec</div>
+                                    </div>
+                                </li>
+                                <li class="clearfix"><img src="Images/right-mark.jpg" class="fleft layout__dashboard__updates__list__image clearfix">
+                                    <div class="fleft layout__dashboard__updates__list__text">
+                                        <h4>Twittter Bootstrap v3.0 is coming!</h4>
+                                        <p>With 2.2.2 out the door, our attention has shifted almost entirely to the next major update to the project...</p>
+                                    </div>
+                                    <div class="fright">
+                                        <div class="layout__dashboard__updates__list__date">06</div>
+                                        <div class="layout__dashboard__updates__list__month">jan</div>
+                                    </div>
+                                </li>
+                                <li class="clearfix"><img src="Images/bulb-img.jpg" class="fleft layout__dashboard__updates__list__image clearfix">
+                                    <div class="fleft layout__dashboard__updates__list__text">
+                                        <h4>Ruby onRails 4.0</h4>
+                                        <p>Rails 4.0 is still unfinished , but it is shaping up to become a great release...</p>
+                                    </div>
+                                    <div class="fright">
+                                        <div class="layout__dashboard__updates__list__date">11</div>
+                                        <div class="layout__dashboard__updates__list__month">feb</div>
+                                    </div>
+                                </li>
+                                <li class="clearfix"><img src="Images/mobile-img.jpg" class="fleft layout__dashboard__updates__list__image clearfix">
+                                    <div class="fleft layout__dashboard__updates__list__text">
+                                        <h4>All about SCSS</h4>
+                                        <p>Sass makes CSS fun again.Sass is an extension of CSS3,ading nested rules...</p>
+                                    </div>
+                                    <div class="fright">
+                                        <div class="layout__dashboard__updates__list__date">04</div>
+                                        <div class="layout__dashboard__updates__list__month">mar</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="layout__dashboard__comments clearfix">
+                        <img src="Images/face1.png" class="fleft layout__dashboard__comments__image clearfix" />
+                        <div class="fright layout__dashboard__comments__section">
+                            <div class="layout__dashboard__comments__header clearfix">
+                                <div class="fleft">
+                                    <img src="Images/face1.png" class="fleft layout__dashboard__comments__image2 clearfix" />
+                                    <span class="layout__dashboard__comments__header__box">COMMENT</span>Michael<span class="layout__dashboard__comments__header__text">posted a comment on this task:</span>Core Admin
+                                </div>
+                                <div class="fright">
+                                    <img src="Images/time.jpg" class="layout__dashboard__comments__header__icon"><span class="layout__dashboard__comments__header__icon__text">3 mintues ago</span>
+                                </div>
+                            </div>
+                            <div class="layout__dashboard__comments__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores perferendis ea error repellendus voluptatibus, excepturi quibusdam dolorem, labore consequuntur dolor! Aspernatur maxime ipsam quos nostrum illo deserunt nemo unde hic?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae at modi porro dignissimos aperiam sunt officia quo illum?</div>
+                            <div class="layout__dashboard__comments__attachment"><img src="Images/attch.jpg" class="layout__dashboard__comments__attachment__image">project_news.docx
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="layout__dashboard__comments clearfix">
+                        <img src="Images/face2.png" class="fleft layout__dashboard__comments__image clearfix" />
+                        <div class="fright layout__dashboard__comments__section">
+                            <div class="layout__dashboard__comments__header clearfix">
+                                <div class="fleft">
+                                    <img src="Images/face2.png" class="fleft layout__dashboard__comments__image2 clearfix" />
+                                    <span class="layout__dashboard__comments__header__box layout__dashboard__comments__header__box2">TASK</span>Michael<span class="layout__dashboard__comments__header__text">completed this task:</span><strike>Core Admin</strike>
+                                </div>
+                                <div class="fright">
+                                    <img src="Images/time.jpg" class="layout__dashboard__comments__header__icon"><span class="layout__dashboard__comments__header__icon__text">6 mintues ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout__dashboard__comments clearfix">
+                        <img src="Images/face3.png" class="fleft layout__dashboard__comments__image clearfix" />
+                        <div class="fright layout__dashboard__comments__section">
+                            <div class="layout__dashboard__comments__header clearfix">
+                                <div class="fleft">
+                                    <img src="Images/face3.png" class="fleft layout__dashboard__comments__image2 clearfix" />
+                                    <span class="layout__dashboard__comments__header__box layout__dashboard__comments__header__box3">FILE</span>John<span class="layout__dashboard__comments__header__text">added 3 new files in project:</span>Core Admin
+                                </div>
+                                <div class="fright">
+                                    <img src="Images/time.jpg" class="layout__dashboard__comments__header__icon"><span class="layout__dashboard__comments__header__icon__text">12 mintues ago</span>
+                                </div>
+                            </div>
+                            <div class="layout__dashboard__comments__content clearfix">
+                                <div class="fleft layout__dashboard__comments__blocks__border clearfix">
+                                    <div class="fleft layout__dashboard__comments__blocks">240 X 100</div>
+                                </div>
+                                <div class="fleft layout__dashboard__comments__blocks__border layout__dashboard__comments__blocks__border2 clearfix">
+                                    <div class="fleft layout__dashboard__comments__blocks">240 X 100</div>
+                                </div>
+                                <div class="fleft layout__dashboard__comments__blocks__border clearfix">
+                                    <div class="fleft layout__dashboard__comments__blocks">240 X 100</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="layout__dashboard__comment__writing-section clearfix">
+                        <div class="clearfix">
+                            <div class="fleft layout__dashboard__comment__writing-section__text">
+                                <div>Add a comment for project <span class="layout__dashboard__comment__writing-section__text__name">Core Admin</span>
+                                </div>
+                                <div class="layout__dashboard__comment__writing-section__text2"><i>Click on the textarea below to expand it!</i></div>
+                            </div>
+                            <img src="Images/face2.png" class="fleft">
+                        </div>
+                        <div class="layout__dashboard__comment__textarea__wrapper">
+                            <textarea class="layout__dashboard__comment__textarea" placeholder="add a comment(click to expand)"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

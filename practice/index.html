@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel='stylesheet' href="styles.css" />
+</head>
+
+<body>
+    <svg width="100%" height="100%" viewBox="0 0 150 360" preserveAspectRatio="xMidYMid meet">
+        <defs>
+            <filter id="blendNorm" x="0" y="0" width="280" height="230" filterUnits="userSpaceOnUse">
+                <feImage x="0" y="0" width="200" height="180" xlink:href="images/img_fjords.jpg" result="img1" />
+                <feImage x="0" y="0" width="200" height="180" xlink:href="images/img_lights.jpg" result="img2" />
+                <feBlend mode="multiply" in="img1" in2="img2" />
+            </filter>
+            <filter id="spotlight">
+                <feSpecularLighting result="spotlight" specularConstant="1.5" specularExponent="4" lighting-color="#FFF">
+                    <feSpotLight x="600" y="600" z="400" limitingConeAngle="5.5" />
+                </feSpecularLighting>
+                <feComposite in="SourceGraphic" in2="spotlight" operator="lighter" k1="0" k2="1" k3="1" k4="0" />
+            </filter>
+            <filter id="lightMe1">
+                <feDiffuseLighting in="SourceGraphic" result="light" lighting-color="white">
+                    <feDistantLight azimuth="240" elevation="20" />
+                </feDiffuseLighting>
+
+                <feComposite in="SourceGraphic" in2="light" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+            </filter>
+            <filter id="blurMe">
+                <feGaussianBlur in="offOut" stdDeviation="5" />
+            </filter>
+
+        </defs>
+        <a xlink:href="">
+            <g filter="url(#blendNorm)"></g>
+            <text x="90" y="170" fill="red">Hello
+                <animate attributeName="fill" from="red" to="blue" dur="1s" repeatCount="indefinite" />
+            </text>
+            <image href="images/img_nature.jpg" x="10%" y="50%" width="80%" height="20%" style="filter:url(#spotlight);">
+                <animate id="a1" attributeName="x" from="-100" to="150" dur="10s" fill="freeze" />
+                <animate attributeName="href" from="images/img_nature.jpg" to="images/img_lights.jpg" begin="a1.end" dur="1s" fill="freeze" />
+            </image>
+            <image xlink:href="images/img_nature.jpg" x="100%" y="50%" width="80%" height="20%" style="filter:url(#blurMe);">
+                <animateMotion dur="6s" repeatCount="indefinite" path="M10,110 A120,120 -45 0,1 110 10 A120,120 -45 0,1 10,110" />
+            </image>
+            <image xlink:href="images/img_nature.jpg" x="100%" y="75%" width="80%" height="20%" style="filter:url(#lightMe1);">
+                <animate attributeName="opacity" from="1" to="0" dur="6s" repeatCount="indefinite" />
+            </image>
+        </a>
+    </svg>
+</body>
+
+</html>

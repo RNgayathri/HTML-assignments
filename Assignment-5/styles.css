@@ -1,0 +1,463 @@
+/*::: css reset code starts here :::*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*::: css reset code ends here :::*/
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    background: #E8E8E8;
+}
+
+
+/*:::Primary header starts here :::*/
+
+.primary-header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: url(images/hdr-navi.jpg);
+}
+
+.primary-header__dashboard {
+    float: left;
+    width: 44px;
+    height: 35px;
+    margin: 8px 10px;
+    margin-bottom: 0;
+    background: url(images/dashboard-btn.png) no-repeat;
+}
+
+.primary-header__tab {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    margin-top: 5px;
+}
+
+.details {
+    float: left;
+    width: 33px;
+    height: 35px;
+    background: url('images/tab-navi.png') no-repeat -28px -6px;
+    margin-right: 36px;
+}
+
+.tasks {
+    float: left;
+    background: url('images/tab-navi.png') no-repeat -105px -2px;
+    width: 32px;
+    height: 39px;
+    margin-right: 36px;
+}
+
+.hazards {
+    float: left;
+    background: url('images/tab-navi.png') no-repeat -180px -6px;
+    width: 39px;
+    height: 35px;
+    margin-right: 36px;
+}
+
+.controls {
+    float: left;
+    background: url('images/tab-navi.png') no-repeat -254px -3px;
+    width: 41px;
+    height: 38px;
+    margin-right: 36px;
+}
+
+.history {
+    float: left;
+    background: url('images/tab-navi.png') no-repeat -336px -5px;
+    width: 34px;
+    height: 38px;
+    margin-right: 36px;
+}
+
+.help {
+    float: left;
+    background: url('images/tab-navi.png') no-repeat -413px -3px;
+    width: 28px;
+    height: 40px;
+}
+
+.primary-header__plus-btn {
+    float: right;
+    margin: 8px 10px;
+    width: 44px;
+    height: 35px;
+    background: url(images/plus-btn.png) no-repeat;
+}
+
+
+/*:::Primary header ends here :::*/
+
+
+/*:::Secondary header starts here :::*/
+
+.secondary-header {
+    padding: 10px;
+    background-color: white;
+}
+
+.secondary-header__heading {
+    float: left;
+    color: #606060;
+}
+
+.table-caption {
+    font-size: 32px;
+}
+
+.status {
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;
+    width: 500px;
+    height: 50px;
+    border-spacing: 0;
+    background-color: #FCFCFC;
+    color: #707070;
+    margin-top: 5px;
+}
+
+.status td {
+    font-size: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #D5D5D5;
+}
+
+.status tr:last-child td:last-child {
+    border-right: none;
+}
+
+.status__description {
+    font-size: 15px;
+    color: #606060;
+}
+
+.secondary-header__logo {
+    float: right;
+    width: 100px;
+    height: 110px;
+    display: inline-block;
+    background: url(images/at_t-logo.jpg) no-repeat;
+}
+
+
+/*:::secondary header ends here :::*/
+
+
+/*:::task header starts here :::*/
+
+.task {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    background: url(images/main-hdr-bg.jpg);
+    text-align: center;
+    color: #F6F6F6;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.newtask-link {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    background: url(images/dark-blue-lft.png) no-repeat, url(images/dark-blue-rght.png) no-repeat;
+    font-size: 16px;
+    padding: 8px 20px;
+    color: #F6F6F6;
+    border-radius: 5px;
+}
+
+
+/*:::task header ends here :::*/
+
+
+/*:::section starts here :::*/
+
+.section__section-content {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 2px solid #DEDEDE;
+}
+
+.section__section-content:nth-child(even) {
+    background-color: #F3F3F3;
+}
+
+.section-content__image {
+    border: 2px solid #E3E3E3;
+    margin-right: 25px;
+}
+
+.section-content__paragraph {
+    float: left;
+    width: 500px;
+    margin-right: 35px;
+}
+
+.section-content__paragraph p {
+    line-height: 22px;
+    color: #535353;
+}
+
+.section-content__paragraph h4 {
+    margin: 5px 0;
+    color: #535353;
+}
+
+.attachment {
+    background-color: #F6F6F6;
+    border: 2px solid #E3E3E3;
+    width: 50px;
+    height: 28px;
+    padding: 2px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.hazard-type {
+    width: 120px;
+    height: 60px;
+    border-collapse: collapse;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    background-color: #F9F9F9;
+}
+
+caption {
+    font-size: 10px;
+    color: #616161;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.hazard-type td {
+    border: solid 1px #E0E0E0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.icon-margin {
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.icon1 {
+    float: left;
+    background: url('images/icon-item.png') no-repeat -2px 0;
+    width: 18px;
+    height: 17px;
+    margin: 3px;
+}
+
+.icon2 {
+    float: left;
+    background: url('images/icon-item.png') no-repeat -65px 0;
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+}
+
+.icon3 {
+    float: left;
+    background: url('images/icon-item.png') no-repeat -136px -4px;
+    width: 11px;
+    height: 13px;
+    margin: 6px;
+}
+
+.icon4 {
+    float: left;
+    background: url('images/icon-item.png') no-repeat -2px -29px;
+    width: 18px;
+    height: 17px;
+    margin: 3px;
+}
+
+.icon5 {
+    float: left;
+    background: url('images/icon-item.png') no-repeat -62px -26px;
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+}
+
+.icon6 {
+    float: left;
+    background: url('images/icon-item.png') no-repeat -131px -28px;
+    width: 17px;
+    height: 18px;
+    margin: 3px;
+}
+
+.d-icon1 {
+    float: left;
+    background: url('images/icon-deactive.png') no-repeat 0 0;
+    width: 20px;
+    height: 17px;
+    margin: 3px;
+}
+
+.d-icon2 {
+    float: left;
+    background: url('images/icon-deactive.png') no-repeat -65px 0;
+    width: 16px;
+    height: 19px;
+    margin: 4px;
+}
+
+.d-icon3 {
+    float: left;
+    background: url('images/icon-deactive.png') no-repeat -136px -4px;
+    width: 14px;
+    height: 13px;
+    margin: 5px;
+}
+
+.d-icon4 {
+    float: left;
+    background: url('images/icon-deactive.png') no-repeat 0 -29px;
+    width: 20px;
+    height: 17px;
+    margin: 3px;
+}
+
+.d-icon5 {
+    float: left;
+    background: url('images/icon-deactive.png') no-repeat -62px -26px;
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+}
+
+.d-icon6 {
+    float: left;
+    background: url('images/icon-deactive.png') no-repeat -131px -28px;
+    width: 17px;
+    height: 18px;
+    margin: 3px;
+}
+
+.deactive {
+    color: #D5D5D5;
+}
+
+.section__section-content__bg-green {
+    background-image: url(images/green-color.jpg);
+    width: 40px;
+}
+
+.section__section-content__bg-orange {
+    background-image: url(images/orange-color.jpg);
+    width: 40px;
+}
+
+.section__section-content__bg-red {
+    background-image: url(images/red-color.jpg);
+    width: 40px;
+}
+
+.null {
+    background-color: #F9F9F9;
+    width: 40px;
+}
+
+.severity {
+    text-align: center;
+    border: 1px solid #D6D6D6;
+    border-radius: 10px;
+    border-spacing: 0;
+    color: white;
+    font-size: 13px;
+}
+
+.severity tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.severity tr:last-child td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.arrow {
+    float: right;
+    background: url(images/list-arrow.png) no-repeat;
+    width: 16px;
+    height: 27px;
+    margin-top: 40px;
+}
+
+
+/*:::section ends here :::*/
+
+
+/*:::footer starts here :::*/
+
+.footer {
+    width: 900px;
+    background-color: white;
+    height: 50px
+}
+
+.submit {
+    float: right;
+    background: url(images/footr-link-lft.jpg) no-repeat, url(images/footr-link-rght.jpg) no-repeat;
+    width: 250px;
+    height: 33px;
+    color: white;
+    font-size: 13px;
+    padding-top: 8px;
+    text-align: center;
+    margin: 5px 10px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+/*:::footer ends here :::*/

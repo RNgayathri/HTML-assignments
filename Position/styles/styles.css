@@ -1,0 +1,73 @@
+/*::: css reset code starts here :::*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #D9E6ED;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*::: css reset code ends here :::*/
+
+.layout-container {
+    height: 100%;
+    width: 1000px;
+    background: white;
+    display: block;
+    margin: 30px auto;
+    position: relative;
+}
+
+.col1 {
+    height: 100%;
+    width: 30%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.col2 {
+    height: 100%;
+    width: 40%;
+    background-color: yellow;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+}
+
+.col3 {
+    height: 100%;
+    width: 30%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 700px;
+}

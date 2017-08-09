@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overlay layout</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src=""></script>
+</head>
+
+
+<body>
+    <div class="overlay" id="alert">
+        <div class="overlay-content">
+            Are you sure you want to download?
+            <span class="button">Okay!</span>
+        </div>
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th width="30% ">FileName</th>
+                    <th width="70% ">Download Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sublime</td>
+                    <td><a href="#alert" class="tooltip tooltip-right " data="25MB ">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Photoshop</td>
+                    <td><a class="tooltip tooltip-left " data="45MB ">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Illustrator</td>
+                    <td><a href=" ">Download</a></td>
+                </tr>
+                <tr>
+                    <td>WebMaster</td>
+                    <td><a class="tooltip tooltip-top " data="60MB ">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Bootstarp</td>
+                    <td><a class="tooltip tooltip-bottom " data="50MB ">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Magento</td>
+                    <td><a href=" ">Download</a></td>
+                </tr>
+                <tr>
+                    <td>AbanteCart</td>
+                    <td><a href=" ">Download</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

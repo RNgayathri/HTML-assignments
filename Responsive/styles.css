@@ -1,0 +1,97 @@
+/*::: css reset code starts here :::*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*::: css reset code ends here :::*/
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.layout {
+    float: left;
+    width: 25%;
+    height: calc(100% - 100px);
+    background-color: red;
+}
+
+.layout2 {
+    float: left;
+    width: 50%;
+    height: calc(100% - 100px);
+    background-color: green;
+}
+
+.layout3 {
+    float: right;
+    width: 25%;
+    height: calc(100% - 100px);
+    background-color: blue;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+
+@media (min-width:728px) and (max-width: 1024px) {
+    .layout {
+        clear: left;
+        position: absolute;
+        top: calc(50% + 50px);
+        height: 32%;
+        width: 50%;
+    }
+    .layout2 {
+        clear: left;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: 50%;
+    }
+    .layout3 {
+        clear: right;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        width: 50%;
+        height: 32%;
+    }
+}

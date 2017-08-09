@@ -1,0 +1,158 @@
+/*::: css reset code starts here :::*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*::: css reset code ends here :::*/
+
+
+/*::: css fonts starts here :::*/
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto-light';
+    src: url(../fonts/Roboto/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: OpenSans-regular;
+    src: url(../fonts/OpenSans/OpenSans-Regular.ttf) format("truetype");
+}
+
+
+/*::: css fonts ends here :::*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: url(images/bg_main.png);
+}
+
+.aside {
+    float: left;
+    background: url(images/10.png);
+    width: 19%;
+    height: 100%;
+    background-color: #333333;
+}
+
+.aside__logo {
+    background: url(images/logo.png) no-repeat;
+    display: block;
+    margin: 50px auto;
+    width: 230px;
+    height: 200px;
+}
+
+.aside__link {
+    margin-left: 61px;
+}
+
+.aside__link a {
+    color: white;
+    text-decoration: none;
+    margin: 3px auto;
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+.aside__link li {
+    padding-right: 110px;
+    list-style-type: none;
+}
+
+.aside__link li:hover,
+.active {
+    background: url(images/bg_menu_act.gif) right no-repeat;
+}
+
+.aside__link a:hover,
+.a__active {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.aside__footer {
+    font-size: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+}
+
+span {
+    color: #E3AE03;
+}
+
+.section {
+    float: left;
+    width: 81%;
+    height: 100%;
+    padding: 160px 400px 0 60px;
+}
+
+.section__message {
+    font-size: 90px;
+    font-family: 'Roboto-regular';
+}
+
+.section__caption {
+    font-size: 20px;
+    color: #31272A;
+    margin-bottom: 10px;
+    font-family: 'Roboto-regular';
+}
+
+.section__content {
+    border-top: 3px solid #E3AE03;
+    border-bottom: 3px solid #E3AE03;
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section__content2 {
+    font-size: 10px;
+    line-height: 20px;
+    font-family: 'OpenSans-regular';
+}
